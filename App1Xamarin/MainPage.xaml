@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:App1Xamarin" 
+             x:Class="App1Xamarin.MainPage">
+    <StackLayout
+        BackgroundColor="#FFBF00" 
+        Padding="30"
+        Spacing="30">
+        <!-- Place new controls here -->
+        <Image Source="correio-logo.png" Margin="50"/>
+        <Entry Placeholder="Entre com o CEP"
+               PlaceholderColor="#FFBF00"
+               BackgroundColor="#FFFFFF"
+               x:Name="CEP"/>
+        <Button Text="Buscar"
+                TextColor="White"
+                BackgroundColor="#00416B" 
+                Clicked="buscarEndereco"/>
+        <Label Text="" 
+               x:Name="MENSAGEM"/>
+    </StackLayout>
+</ContentPage>
